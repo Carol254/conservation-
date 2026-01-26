@@ -1,0 +1,5 @@
+.hero-img {
+  width: 100%;       /* Spans the full width of the screen */
+  height: 100%;     /* Sets a fixed height */
+  object-fit: cover; /* Crops the image so it doesn't look squashed */
+}
