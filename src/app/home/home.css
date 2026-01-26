@@ -33,3 +33,23 @@
   background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%);
   z-index: 1;
 }
+.f-white{
+  color: white !important;
+}
+.btn {
+  transition: all 0.4s ease; /* Smooth transition for the effect */
+}
+
+.btn:hover {
+  /* Glassmorphism Core Properties */
+  background: rgba(255, 255, 255, 0.2); /* Translucent white */
+  backdrop-filter: blur(10px);          /* The "frosted" glass effect */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  
+  /* Glass Borders and Shadows */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  /* Text styling */
+  color: #ffffff;
+}
