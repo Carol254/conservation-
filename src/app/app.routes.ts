@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Gallery } from './gallery/gallery';
+import { Stories } from './stories/stories';
 
 export const routes: Routes = [
     {
@@ -8,8 +9,12 @@ export const routes: Routes = [
         component:Home
     },
     {
-        path:'/gallery',
+        path:'gallery',
         component:Gallery
+    },
+    {
+        path:'stories',
+        component:Stories
     }
 
 ];
