@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './stories.css',
 })
 export class Stories {
-
+    
 }

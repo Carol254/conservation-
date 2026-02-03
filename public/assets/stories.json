@@ -1,0 +1,94 @@
+{
+  "conservation_stories": [
+    {
+      "id": 1,
+      "name": "Dr. Elena Vance",
+      "location": "Belize",
+      "specialty": "Marine Biology & Coral Restoration",
+      "story": "After witnessing the bleaching of her childhood reefs, Elena founded 'CoralHope.' She uses innovative 3D-printing technology to create substrates for larval coral to settle on. Her mission is to prove that while the ocean is changing, it isn't too late to adapt.",
+      "call_to_action": "The ocean is the planet's blue heart. Every piece of plastic you refuse is a breath of life for the reef.",
+      "tags": ["Ocean", "Technology", "Climate Adaptation"]
+    },
+    {
+      "id": 2,
+      "name": "Marcus Thorne",
+      "location": "Kenya",
+      "specialty": "Human-Wildlife Conflict Resolution",
+      "story": "Marcus grew up in a farming community where elephants were often seen as a threat to livelihoods. He pioneered the use of 'Beehive Fences,' which naturally deter elephants while providing farmers with a secondary income through honey production.",
+      "call_to_action": "True conservation only works when it supports the people living alongside the wildlife.",
+      "tags": ["Wildlife", "Community", "Sustainable Agriculture"]
+    },
+    {
+      "id": 3,
+      "name": "Aria Chen",
+      "location": "Singapore",
+      "specialty": "Urban Rewilding",
+      "story": "Aria works to transform concrete jungles into functional ecosystems. She led the 'Vertical Forest' project, converting high-rise balconies into biodiversity corridors for migratory birds and pollinators in the heart of the city.",
+      "call_to_action": "Nature doesn't just belong in a national park; it belongs on your windowsill and your rooftop.",
+      "tags": ["Urban Planning", "Biodiversity", "Education"]
+    },
+    {
+      "id": 4,
+      "name": "Samuel Okoro",
+      "location": "Nigeria",
+      "specialty": "Mangrove Restoration",
+      "story": "Samuel noticed that the local fishing yields were dropping as mangrove forests were cleared for fuel. He organized a youth movement to replant over 50,000 saplings, creating a natural storm surge barrier and a nursery for aquatic life.",
+      "call_to_action": "Protect the roots, and the roots will protect the shore.",
+      "tags": ["Coastline", "Youth Leadership", "Fisheries"]
+    },
+    {
+      "id": 5,
+      "name": "Inara Yawanawá",
+      "location": "Brazil",
+      "specialty": "Indigenous Land Sovereignty",
+      "story": "As a leader in her territory, Inara uses drone mapping to monitor illegal logging and mining. She advocates for the idea that the best way to save the Amazon is to empower the people who have lived there for millennia.",
+      "call_to_action": "The forest is not a resource; it is our ancestor. Treat it with the respect it deserves.",
+      "tags": ["Amazon", "Indigenous Rights", "Technology"]
+    },
+    {
+      "id": 6,
+      "name": "Dr. Nils Bergman",
+      "location": "Norway",
+      "specialty": "Arctic Ice Preservation",
+      "story": "Nils studies the 'albedo effect' and works on localized solutions to slow glacial melt. He spends six months a year on the ice, documenting the rapid changes to the polar ecosystem to provide data for global policy changes.",
+      "call_to_action": "What happens in the Arctic doesn't stay in the Arctic. We are all connected by the ice.",
+      "tags": ["Climate Science", "Arctic", "Glaciology"]
+    },
+    {
+      "id": 7,
+      "name": "Maya Rodriguez",
+      "location": "Costa Rica",
+      "specialty": "Regenerative Coffee Farming",
+      "story": "Maya transitioned her family's traditional coffee plantation into a shade-grown, bird-friendly haven. By removing synthetic pesticides, she saw a 400% increase in local butterfly and bird species within three years.",
+      "call_to_action": "Vote with your morning cup. Choose coffee that protects the canopy.",
+      "tags": ["Agriculture", "Birds", "Sustainability"]
+    },
+    {
+      "id": 8,
+      "name": "Julian De Silva",
+      "location": "Australia",
+      "specialty": "Great Barrier Reef Protection",
+      "story": "Julian is a dive master turned activist. He runs citizen science programs where tourists help track crown-of-thorns starfish outbreaks, turning every vacation into a data-gathering mission for reef health.",
+      "call_to_action": "You don't need a PhD to be a scientist; you just need to observe and report.",
+      "tags": ["Citizen Science", "Tourism", "Marine Life"]
+    },
+    {
+      "id": 9,
+      "name": "Fatima Al-Sayed",
+      "location": "Jordan",
+      "specialty": "Water Scarcity & Desert Greening",
+      "story": "In one of the driest places on Earth, Fatima teaches ancient 'Wadi' water harvesting techniques combined with modern drip irrigation to help desert communities grow their own food with minimal water.",
+      "call_to_action": "Water is life's most precious currency. Spend it wisely.",
+      "tags": ["Water", "Desertification", "Tradition"]
+    },
+    {
+      "id": 10,
+      "name": "Leo Fontaine",
+      "location": "France",
+      "specialty": "Entomology & Pollinator Pathways",
+      "story": "Leo realized that honeybees get all the fame, while solitary bees do much of the work. He launched a nationwide campaign to build 'Bee Hotels' and plant native wildflowers along highways to create a network for insects.",
+      "call_to_action": "Save the small things, and the big things will follow.",
+      "tags": ["Insects", "Biodiversity", "Infrastructure"]
+    }
+  ]
+}
