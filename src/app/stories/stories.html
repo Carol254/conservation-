@@ -6,7 +6,16 @@
                     <mat-icon aria-hidden="false" aria-label="Example person icon" fontIcon="person"></mat-icon>
                 </div>
                 <mat-card-title>{{story.name}}</mat-card-title>
-                <mat-card-subtitle>{{story.location}}</mat-card-subtitle>
+                <mat-card-title class="location-header">
+                    <img [src]="'https://flagcdn.com/w40/' + story.country_code.toLowerCase() + '.png'" 
+                        [alt]="story.location + ' flag'"
+                        width="30"
+                        class="flag-icon">
+                    <h6 class="location-text">{{story.location}}</h6>
+                </mat-card-title>
+               
+                
+                
             </mat-card-header>
             <!-- <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
             <mat-card-content>

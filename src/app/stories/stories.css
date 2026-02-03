@@ -15,3 +15,21 @@
   background-size: cover;
 }
 
+.location-header {
+  display: flex;         /* Enables Flexbox */
+  align-items: center;   /* Aligns items vertically in the center */
+  gap: 12px;             /* Creates consistent space between flag and text */
+  margin: 0;             /* Removes default title margins */
+}
+
+.location-text {
+  margin: 0;             /* Removes the default h6 top/bottom margins */
+  font-weight: 500;
+  line-height: 1;        /* Helps with perfect vertical centering */
+}
+
+.flag-icon {
+  border-radius: 2px;    /* Optional: gives the flag a slight rounded look */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Optional: makes the flag pop */
+}
+
