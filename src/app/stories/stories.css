@@ -1,3 +1,11 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+  padding:20px;
+}
+
 .example-card {
   max-width: 400px;
 }
@@ -6,3 +14,4 @@
   background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
+
