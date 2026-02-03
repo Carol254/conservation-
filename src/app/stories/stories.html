@@ -1,7 +1,5 @@
-
-
 <div class="card-container">
-    @for(story of stories; track story.id){
+    @for(story of (stories$ | async); track story.id){
         <mat-card class="example-card" appearance="outlined">
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
