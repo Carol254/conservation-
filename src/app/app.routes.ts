@@ -3,6 +3,8 @@ import { Home } from './home/home';
 import { Gallery } from './gallery/gallery';
 import { Stories } from './stories/stories';
 import { About } from './about/about';
+import { Flora } from './flora/flora';
+import { Fauna } from './fauna/fauna';
 
 export const routes: Routes = [
     {
@@ -20,6 +22,14 @@ export const routes: Routes = [
     {
         path:'about',
         component:About
+    },
+    {
+        path:'flora',
+        component:Flora
+    },
+    {
+        path:'fauna',
+        component:Fauna
     }
 
 ];
