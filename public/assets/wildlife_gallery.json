@@ -1,0 +1,94 @@
+{
+  "wildlife_gallery": [
+    {
+      "id": 1,
+      "name": "African Lion",
+      "group": "Big Five",
+      "scientific_name": "Panthera leo",
+      "image_url": "https://images.unsplash.com/photo-1546182990-dffeafbe841d",
+      "description": "The 'King of the Jungle,' known for its majestic mane and social pride structure.",
+      "fact": "A lion's roar can be heard from as far as 8 kilometers away."
+    },
+    {
+      "id": 2,
+      "name": "African Elephant",
+      "group": "Big Five",
+      "scientific_name": "Loxodonta africana",
+      "image_url": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46",
+      "description": "The largest land animal on Earth, possessing high intelligence and complex social bonds.",
+      "fact": "Elephants communicate through low-frequency sounds called infrasound."
+    },
+    {
+      "id": 3,
+      "name": "African Buffalo",
+      "group": "Big Five",
+      "scientific_name": "Syncerus caffer",
+      "image_url": "https://images.unsplash.com/photo-1560010915-f5379f67a6f2",
+      "description": "Also known as the Cape Buffalo, it is one of the most successful grazers in Africa.",
+      "fact": "Buffaloes have a 'voting' behavior where they signal the direction they want to move."
+    },
+    {
+      "id": 4,
+      "name": "Leopard",
+      "group": "Big Five",
+      "scientific_name": "Panthera pardus",
+      "image_url": "https://images.unsplash.com/photo-1516641396056-0ce60a35d714",
+      "description": "The most elusive of the big cats, famous for its climbing ability and spotted coat.",
+      "fact": "Leopards often drag their kills high into trees to protect them from scavengers."
+    },
+    {
+      "id": 5,
+      "name": "Black Rhinoceros",
+      "group": "Big Five",
+      "scientific_name": "Diceros bicornis",
+      "image_url": "https://images.unsplash.com/photo-1534199026332-95f005c08d1f",
+      "description": "A powerful herbivore characterized by its two horns and prehensile upper lip.",
+      "fact": "Rhinos have been around for over 50 million years."
+    },
+    {
+      "id": 6,
+      "name": "Elephant Shrew",
+      "group": "Small Five",
+      "scientific_name": "Macroscelididae",
+      "image_url": "https://images.unsplash.com/photo-1591151659970-f8d29b02315b",
+      "description": "A tiny insectivore with a long, flexible snout resembling an elephant's trunk.",
+      "fact": "They are more closely related to elephants than to true shrews."
+    },
+    {
+      "id": 7,
+      "name": "Ant Lion",
+      "group": "Small Five",
+      "scientific_name": "Myrmeleontidae",
+      "image_url": "https://images.unsplash.com/photo-1619451151608-251025a77033",
+      "description": "A predatory insect whose larvae dig funnel-shaped pits in the sand to trap ants.",
+      "fact": "They spend most of their lives in the larval stage, waiting for prey."
+    },
+    {
+      "id": 8,
+      "name": "Rhinoceros Beetle",
+      "group": "Small Five",
+      "scientific_name": "Dynastinae",
+      "image_url": "https://images.unsplash.com/photo-1541334800766-0d674175373a",
+      "description": "Large beetles with horn-like structures used for fighting rivals during mating season.",
+      "fact": "They can lift objects 850 times their own body weight."
+    },
+    {
+      "id": 9,
+      "name": "Leopard Tortoise",
+      "group": "Small Five",
+      "scientific_name": "Stigmochelys pardalis",
+      "image_url": "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3",
+      "description": "The fourth largest tortoise in the world, marked with yellow and black spots.",
+      "fact": "They can live for up to 100 years and are surprisingly fast swimmers."
+    },
+    {
+      "id": 10,
+      "name": "Red-billed Buffalo Weaver",
+      "group": "Small Five",
+      "scientific_name": "Bubalornis niger",
+      "image_url": "https://images.unsplash.com/photo-1555169062-013468b47731",
+      "description": "A social bird that builds large, messy communal nests in thorny trees.",
+      "fact": "They are often the first birds to sound an alarm when a predator is nearby."
+    }
+  ]
+}
