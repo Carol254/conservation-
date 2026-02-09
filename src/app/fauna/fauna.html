@@ -1,5 +1,5 @@
  <div class="mt-50">
-    The uniqueness of Africa pertains the beautiful animals of the land.
+        The uniqueness of Africa pertains the beautiful animals of the land.
         Our pride and delight is in conserving these precious creatures who are captivating in their nature.
         A lot is known about the big five and very litte detail is geiven to the small five. All in all , 
         creatures great and small all deserve a fair chance for their existing generations and those to come.
@@ -13,6 +13,12 @@
             <mat-card-content>
                 <img [src]="animal.image_url" alt="Photo">
             </mat-card-content>
+            <blockquote>
+                {{animal.description}}
+            </blockquote>
+            <blockquote>
+                {{animal.fact}}
+            </blockquote>
         </mat-card>
         
     }

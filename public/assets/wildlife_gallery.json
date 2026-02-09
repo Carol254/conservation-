@@ -5,7 +5,7 @@
       "name": "African Lion",
       "group": "Big Five",
       "scientific_name": "Panthera leo",
-      "image_url": "https://images.unsplash.com/photo-1546182990-dffeafbe841d",
+      "image_url": "./images/img-3.jpg",
       "description": "The 'King of the Jungle,' known for its majestic mane and social pride structure.",
       "fact": "A lion's roar can be heard from as far as 8 kilometers away."
     },
@@ -14,7 +14,7 @@
       "name": "African Elephant",
       "group": "Big Five",
       "scientific_name": "Loxodonta africana",
-      "image_url": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46",
+      "image_url": "./images/african-elephant.jpg",
       "description": "The largest land animal on Earth, possessing high intelligence and complex social bonds.",
       "fact": "Elephants communicate through low-frequency sounds called infrasound."
     },
@@ -23,7 +23,7 @@
       "name": "African Buffalo",
       "group": "Big Five",
       "scientific_name": "Syncerus caffer",
-      "image_url": "https://images.unsplash.com/photo-1560010915-f5379f67a6f2",
+      "image_url": "./images/buffallo.jpg",
       "description": "Also known as the Cape Buffalo, it is one of the most successful grazers in Africa.",
       "fact": "Buffaloes have a 'voting' behavior where they signal the direction they want to move."
     },
@@ -32,7 +32,7 @@
       "name": "Leopard",
       "group": "Big Five",
       "scientific_name": "Panthera pardus",
-      "image_url": "https://images.unsplash.com/photo-1516641396056-0ce60a35d714",
+      "image_url": "./images/leopard.jpg",
       "description": "The most elusive of the big cats, famous for its climbing ability and spotted coat.",
       "fact": "Leopards often drag their kills high into trees to protect them from scavengers."
     },
@@ -41,7 +41,7 @@
       "name": "Black Rhinoceros",
       "group": "Big Five",
       "scientific_name": "Diceros bicornis",
-      "image_url": "https://images.unsplash.com/photo-1534199026332-95f005c08d1f",
+      "image_url": "./images/black-rhino.jpg",
       "description": "A powerful herbivore characterized by its two horns and prehensile upper lip.",
       "fact": "Rhinos have been around for over 50 million years."
     },
@@ -50,7 +50,7 @@
       "name": "Elephant Shrew",
       "group": "Small Five",
       "scientific_name": "Macroscelididae",
-      "image_url": "https://images.unsplash.com/photo-1591151659970-f8d29b02315b",
+      "image_url": "./images/elephant-shrew.jpg",
       "description": "A tiny insectivore with a long, flexible snout resembling an elephant's trunk.",
       "fact": "They are more closely related to elephants than to true shrews."
     },
@@ -59,7 +59,7 @@
       "name": "Ant Lion",
       "group": "Small Five",
       "scientific_name": "Myrmeleontidae",
-      "image_url": "https://images.unsplash.com/photo-1619451151608-251025a77033",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Antlion_larva_disturbed.jpg",
       "description": "A predatory insect whose larvae dig funnel-shaped pits in the sand to trap ants.",
       "fact": "They spend most of their lives in the larval stage, waiting for prey."
     },
@@ -68,7 +68,7 @@
       "name": "Rhinoceros Beetle",
       "group": "Small Five",
       "scientific_name": "Dynastinae",
-      "image_url": "https://images.unsplash.com/photo-1541334800766-0d674175373a",
+      "image_url": "https://images.pexels.com/photos/3313936/pexels-photo-3313936.jpeg",
       "description": "Large beetles with horn-like structures used for fighting rivals during mating season.",
       "fact": "They can lift objects 850 times their own body weight."
     },
@@ -77,7 +77,7 @@
       "name": "Leopard Tortoise",
       "group": "Small Five",
       "scientific_name": "Stigmochelys pardalis",
-      "image_url": "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3",
+      "image_url": "./images/leopard-tortoise.jpg",
       "description": "The fourth largest tortoise in the world, marked with yellow and black spots.",
       "fact": "They can live for up to 100 years and are surprisingly fast swimmers."
     },
@@ -86,7 +86,7 @@
       "name": "Red-billed Buffalo Weaver",
       "group": "Small Five",
       "scientific_name": "Bubalornis niger",
-      "image_url": "https://images.unsplash.com/photo-1555169062-013468b47731",
+      "image_url": "./images/red-billed-buffalo-weaver.jpg",
       "description": "A social bird that builds large, messy communal nests in thorny trees.",
       "fact": "They are often the first birds to sound an alarm when a predator is nearby."
     }
