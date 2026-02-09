@@ -1,7 +1,20 @@
-<div class="_container">
-    <div>The uniqueness of Africa pertains the beautiful animals of the land.
+ <div class="mt-50">
+    The uniqueness of Africa pertains the beautiful animals of the land.
         Our pride and delight is in conserving these precious creatures who are captivating in their nature.
         A lot is known about the big five and very litte detail is geiven to the small five. All in all , 
         creatures great and small all deserve a fair chance for their existing generations and those to come.
-    </div>
+</div>
+<div class="_container">
+    @for(animal of (wildlife$ | async); track animal.id){
+        <mat-card class="example-card" appearance="outlined">
+            <mat-card-title>{{animal.name}}
+                <i><small>({{animal.scientific_name}})</small></i>
+            </mat-card-title>
+        </mat-card>
+        <mat-card-content>
+            <img [src]="animal.image_url" alt="Photo">
+
+
+        </mat-card-content>
+    }
 </div>
