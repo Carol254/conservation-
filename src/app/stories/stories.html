@@ -13,11 +13,7 @@
                         class="flag-icon">
                     <h6 class="location-text">{{story.location}}</h6>
                 </mat-card-title>
-               
-                
-                
             </mat-card-header>
-            <!-- <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
             <mat-card-content>
                 <div class="card-body">
                     <p class="specialty"><strong>Focus:</strong> {{ story.specialty }}</p>
@@ -26,7 +22,6 @@
 
                 <blockquote class="cta">"{{ story.call_to_action }}"</blockquote>
             </mat-card-content>
-
             <mat-card-actions> 
                 <div class="tags">
                     @for (tag of story.tags; track tag) {
