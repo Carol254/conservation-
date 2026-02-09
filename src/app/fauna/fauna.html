@@ -10,11 +10,10 @@
             <mat-card-title>{{animal.name}}
                 <i><small>({{animal.scientific_name}})</small></i>
             </mat-card-title>
+            <mat-card-content>
+                <img [src]="animal.image_url" alt="Photo">
+            </mat-card-content>
         </mat-card>
-        <mat-card-content>
-            <img [src]="animal.image_url" alt="Photo">
-
-
-        </mat-card-content>
+        
     }
 </div>

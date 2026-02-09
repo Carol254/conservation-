@@ -14,6 +14,7 @@ import { AsyncPipe } from '@angular/common';
   styleUrl: './fauna.css',
 })
 export class Fauna  implements OnInit{
+[x: string]: any;
    
   constructor(private http:HttpClient){}
   wildlife$!: Observable<any[]>;
