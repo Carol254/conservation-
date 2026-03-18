@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { DonationService } from '../donation-service';
 
 @Component({
   selector: 'app-services',
@@ -8,19 +9,27 @@ import { Component } from '@angular/core';
   styleUrl: './services.css',
 })
 export class Services {
+  Campaign: any;
+
+  constructor(private donationService:DonationService){}
+
+  showModal = signal(false);
+  selectedCampaign = signal<Campaign | null>(null);
+  phone = signal('');
+  amount = signal<number | null>(null);
 
   educationList = [
     {
       id:0,
       title: 'Forest Conservation',
       description: 'Learn how forests support biodiversity.',
-      image: 'assets/forest.jpg'
+      image: '/images/forest.jpg'
     },
     {
       id:1,
       title: 'Marine Life',
       description: 'Protect oceans and marine ecosystems.',
-      image: 'assets/ocean.jpg'
+      image: '/images/ocean.jpg'
     }
   ];
 
@@ -28,7 +37,7 @@ export class Services {
     name: 'African Elephant',
     description: 'The largest land animal, under threat due to poaching.',
     status: 'Endangered',
-    image: 'assets/elephant.jpg'
+    image: '/images/elephant-2.jpg'
   };
 
   campaigns = [
@@ -51,13 +60,13 @@ export class Services {
       id:0,
       message: '500 trees planted this week 🌱',
       date: 'Today',
-      image: 'assets/tree.jpg'
+      image: '/images/seedling.jpg'
     },
     {
       id:1,
       message: 'Rescued injured elephant 🐘',
       date: 'Yesterday',
-      image: 'assets/elephant2.jpg'
+      image: '/images/african-elephant.jpg'
     }
   ];
 
@@ -69,4 +78,27 @@ export class Services {
 
     // later: call your M-Pesa API here
   }
+
+   openModal(campaign: any) {
+    this.selectedCampaign = campaign;
+    this.showModal.set(true);
+  }
+
+   closeModal() {
+    this.showModal.set(false);
+  }
+
+  confirmDonation() {
+    this.donationService.donate(`${this.phone()}`, Number(this.amount()))
+      .subscribe({
+        next: () => {
+          alert("📲 Check your phone to complete payment");
+          this.closeModal();
+        },
+        error: () => {
+          alert("Something went wrong");
+        }
+      });
+  }
+
 }

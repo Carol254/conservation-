@@ -1,4 +1,4 @@
-<div class="services">
+<div class="services mt-50">
 
   <!-- HERO -->
   <section class="hero">
@@ -13,7 +13,7 @@
    <div class="card-grid">
         @for (item of educationList; track item.id) {
             <div class="card">
-            <img [src]="item.image" />
+            <img [src]="item.image"  class="education-card-img"/>
             <h3>{{ item.title }}</h3>
             <p>{{ item.description }}</p>
             </div>
@@ -52,8 +52,8 @@
             <div class="bar" [style.width.%]="campaign.progress"></div>
             </div>
 
-            <button (click)="donate(campaign)">
-            Donate via M-Pesa
+            <button (click)="openModal(campaign)">
+              Donate via M-Pesa
             </button>
     </div>
     } @empty {
@@ -86,3 +86,32 @@
   </section>
 
 </div>
+
+<!-- DONATION MODAL -->
+@if (showModal()) {
+  <div class="modal">
+    <div class="modal-content">
+      
+      <h3>Donate to {{ selectedCampaign()?.title }}</h3>
+
+      <input 
+        type="text" 
+        placeholder="Phone (e.g. 2547XXXXXXXX)" 
+        [value]="phone()"
+        (input)="phone.set($any($event.target).value)"
+      />
+
+      <input 
+        type="number" 
+        placeholder="Amount (KES)" 
+        [value]="amount()"
+        (input)="amount.set($any($event.target).valueAsNumber)"
+      />
+
+      <div class="actions">
+        <button (click)="confirmDonation()">Confirm</button>
+        <button class="cancel" (click)="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+}
