@@ -1,1 +1,88 @@
-<p>services works!</p>
+<div class="services">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Protect Nature, One Step at a Time 🌿</h1>
+    <p>Learn. Act. Support conservation.</p>
+  </section>
+
+  <!-- EDUCATION HUB -->
+  <section class="section">
+    <h2>🌿 Education Hub</h2>
+
+   <div class="card-grid">
+        @for (item of educationList; track item.id) {
+            <div class="card">
+            <img [src]="item.image" />
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            </div>
+        } @empty {
+            <p>No education records found.</p>
+        }
+    </div>
+  </section>
+
+  <!-- SPECIES SPOTLIGHT -->
+  <section class="section spotlight">
+    <h2>🐾 Species Spotlight</h2>
+
+    <div class="spotlight-card">
+      <img [src]="species.image" />
+
+      <div class="info">
+        <h3>{{ species.name }}</h3>
+        <p>{{ species.description }}</p>
+        <span class="status">{{ species.status }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATIONS -->
+  <section class="section">
+    <h2>💚 Support Conservation</h2>
+
+    <div class="card-grid">
+      @for (campaign of campaigns; track campaign.id) {
+        <div class="card">
+            <h3>{{ campaign.title }}</h3>
+            <p>{{ campaign.description }}</p>
+
+            <div class="progress">
+            <div class="bar" [style.width.%]="campaign.progress"></div>
+            </div>
+
+            <button (click)="donate(campaign)">
+            Donate via M-Pesa
+            </button>
+    </div>
+    } @empty {
+    <div class="no-campaigns">
+        <p>No active conservation campaigns at the moment.</p>
+    </div>
+    }
+    </div>
+  </section>
+
+  <!-- UPDATES -->
+  <section class="section">
+    <h2>📰 Updates</h2>
+
+   <div class="feed">
+        @for (post of updates; track post.id) {
+            <div class="update">
+            <img [src]="post.image" alt="Update Image" />
+            <div>
+                <p>{{ post.message }}</p>
+                <small>{{ post.date }}</small>
+            </div>
+            </div>
+        } @empty {
+            <div class="empty-feed">
+            <p>No recent updates found. Check back soon!</p>
+            </div>
+        }
+   </div>
+  </section>
+
+</div>
