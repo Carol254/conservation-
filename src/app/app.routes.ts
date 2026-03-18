@@ -5,6 +5,7 @@ import { Stories } from './stories/stories';
 import { About } from './about/about';
 import { Flora } from './flora/flora';
 import { Fauna } from './fauna/fauna';
+import { Services } from './services/services';
 
 export const routes: Routes = [
     {
@@ -30,6 +31,10 @@ export const routes: Routes = [
     {
         path:'fauna',
         component:Fauna
+    },
+    {
+        path:'services',
+        component:Services
     }
 
 ];
