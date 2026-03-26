@@ -14,7 +14,7 @@ export class Services {
   constructor(private donationService:DonationService){}
 
   showModal = signal(false);
-  selectedCampaign = signal<Campaign | null>(null);
+  // selectedCampaign = signal<Campaign | null>(null);
   phone = signal('');
   amount = signal<number | null>(null);
 
@@ -80,7 +80,7 @@ export class Services {
   }
 
    openModal(campaign: any) {
-    this.selectedCampaign = campaign;
+    // this.selectedCampaign = campaign;
     this.showModal.set(true);
   }
 
@@ -95,7 +95,8 @@ export class Services {
           alert("📲 Check your phone to complete payment");
           this.closeModal();
         },
-        error: () => {
+        error: (err) => {
+          console.log(err);
           alert("Something went wrong");
         }
       });

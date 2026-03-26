@@ -7,8 +7,9 @@ import { HttpClient } from '@angular/common/http';
 export class DonationService {
 
   constructor(private http:HttpClient){}
+
   donate(phone:string, amount: number){
-    return this.http.post('',{phone,amount});
+    return this.http.post('http://localhost:3000/api/donate',{phone,amount});
   }
   
 }
