@@ -134,3 +134,10 @@ button {
 .cancel {
   background: grey;
 }
+button:disabled {
+  background-color: #cccccc; /* Greyed out */
+  color: #666666;
+  cursor: not-allowed;      /* Shows the 'prohibited' circle icon */
+  opacity: 0.7;
+  transform: none;           /* Prevents hover effects like scaling */
+}

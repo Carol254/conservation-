@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { DonationService } from '../donation-service';
 
 @Component({
@@ -17,6 +17,8 @@ export class Services {
   // selectedCampaign = signal<Campaign | null>(null);
   phone = signal('');
   amount = signal<number | null>(null);
+  
+
 
   educationList = [
     {
@@ -87,6 +89,16 @@ export class Services {
    closeModal() {
     this.showModal.set(false);
   }
+
+  confirmBtn = computed(()=>{
+    const p = this.phone();
+    const a = this.amount();
+
+    const isPhoneValid = /^254\d{9}$/.test(p);
+    const isAmountValid = a !== null && !isNaN(a) && a > 0;
+
+    return !(isPhoneValid && isAmountValid);
+  });
 
   confirmDonation() {
     this.donationService.donate(`${this.phone()}`, Number(this.amount()))

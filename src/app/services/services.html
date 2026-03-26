@@ -109,7 +109,7 @@
       />
 
       <div class="actions">
-        <button (click)="confirmDonation()">Confirm</button>
+        <button [disabled]="confirmBtn()" (click)="confirmDonation()" >Confirm</button>
         <button class="cancel" (click)="closeModal()">Cancel</button>
       </div>
     </div>
