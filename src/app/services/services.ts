@@ -17,6 +17,16 @@ export class Services {
   // selectedCampaign = signal<Campaign | null>(null);
   phone = signal('');
   amount = signal<number | null>(null);
+
+
+  // modal state
+showAdoptModal = false;
+selectedAnimal: any = null;
+adopterName = '';
+
+// success state
+showAdoptSuccess = false;
+adoptedAnimal: any = null;
   
 
 
@@ -34,6 +44,8 @@ export class Services {
       image: '/images/ocean.jpg'
     }
   ];
+
+  
 
   species = {
     name: 'African Elephant',
@@ -71,6 +83,28 @@ export class Services {
       image: '/images/african-elephant.jpg'
     }
   ];
+
+  // 🐾 Animal list
+animals = [
+  {
+    id:0,
+    name: 'Nia the Elephant',
+    story: 'Rescued from a human-wildlife conflict area.',
+    image: 'assets/elephant.jpg'
+  },
+  {
+    id:1,
+    name: 'Tala the Turtle',
+    story: 'Saved from ocean plastic pollution.',
+    image: 'assets/turtle.jpg'
+  },
+  {
+    id:2,
+    name: 'Kito the Lion',
+    story: 'Protected from poaching.',
+    image: 'assets/lion.jpg'
+  }
+];
 
   donate(campaign: any) {
     const phone = prompt("Enter phone number:");
@@ -113,5 +147,12 @@ export class Services {
         }
       });
   }
+
+  selectAnimal(animal: any) {
+    this.selectedAnimal = animal;
+    this.showAdoptModal = true;
+    console.log(`selected animal` + this.selectedAnimal.name);
+  }
+
 
 }

@@ -6,6 +6,8 @@
     <p>Learn. Act. Support conservation.</p>
   </section>
 
+  
+
   <!-- EDUCATION HUB -->
   <section class="section">
     <h2>🌿 Education Hub</h2>
@@ -61,6 +63,32 @@
         <p>No active conservation campaigns at the moment.</p>
     </div>
     }
+    </div>
+  </section>
+
+  <!--ADOPT AN ANIMAL-->
+  <section class="section">
+    <h2>🐾 Adopt an Animal</h2>
+    <p class="sub">
+      Support conservation by adopting an animal and following its journey 💚
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        @for(animal of animals; track animal.id){
+           <img [src]="animal.image" />
+
+          <h3>{{ animal.name }}</h3>
+          <p>{{ animal.story }}</p>
+
+          <button (click)="selectAnimal(animal)">
+            Adopt
+          </button>
+        }
+
+       
+
+      </div>
     </div>
   </section>
 
