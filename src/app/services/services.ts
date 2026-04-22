@@ -20,9 +20,9 @@ export class Services {
 
 
   // modal state
-showAdoptModal = false;
+showAdoptModal = signal(false);
 selectedAnimal: any = null;
-adopterName = '';
+adopterName = signal('');
 
 // success state
 showAdoptSuccess = false;
@@ -148,9 +148,24 @@ animals = [
       });
   }
 
+  // confirm adoption
+    confirmAdoption() {
+      this.adoptedAnimal = this.selectedAnimal;
+      this.showAdoptModal.set(false);
+      this.showAdoptSuccess = true;
+
+      // OPTIONAL: save locally
+      localStorage.setItem('myAnimal', JSON.stringify(this.adoptedAnimal));
+    }
+
+    // close modal
+    closeAdoptModal() {
+      this.showAdoptModal.set(false);
+    }
+
   selectAnimal(animal: any) {
     this.selectedAnimal = animal;
-    this.showAdoptModal = true;
+    this.showAdoptModal.set(true);
     console.log(`selected animal` + this.selectedAnimal.name);
   }
 

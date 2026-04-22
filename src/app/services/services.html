@@ -116,7 +116,7 @@
 </div>
 
 <!-- DONATION MODAL -->
-@if (showModal()) {
+@if (showAdoptModal()) {
   <div class="modal">
     <div class="modal-content">
       
@@ -141,5 +141,31 @@
         <button class="cancel" (click)="closeModal()">Cancel</button>
       </div>
     </div>
+  </div>
+}
+
+
+
+
+<!-- ADOPTION MODAL -->
+
+@if (showAdoptModal()){
+   <div class="modal-content">
+
+    <h3>Adopt {{ selectedAnimal?.name }}</h3>
+
+    <img [src]="selectedAnimal?.image" class="animal-img"/>
+
+    <p>{{ selectedAnimal?.story }}</p>
+
+    <input 
+      type="text" 
+      placeholder="Your Name"
+      [value]="adopterName()"
+    />
+
+    <button (click)="confirmAdoption()">Confirm Adoption</button>
+    <button class="cancel" (click)="closeAdoptModal()">Cancel</button>
+
   </div>
 }
